@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Global styles for the Vastu Interior Studio website.  This file is
+  processed by Tailwind CSS via PostCSS. Any additional utility
+  classes or custom CSS can be added here.  We enable smooth scrolling
+  globally to create a more refined feel.
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide the default scrollbars on the portfolio lightbox overlay to
+   create an immersive viewing experience. */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
